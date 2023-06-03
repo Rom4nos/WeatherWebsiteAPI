@@ -37,27 +37,27 @@ let weather = {
     updateCardBackground: function (description) {
         const card = document.querySelector('.card');
     
-        if (description.includes('rain') || description.includes('drizzle') || description.includes('shower rain')|| description.includes('light intensity shower rain')) {
+        if (description.includes(' rain') || description.includes('drizzle') || description.includes(' shower rain')|| description.includes(' light intensity shower rain')) {
           card.classList.add('rainy');
           // Additional code or actions specific to rainy weather
           console.log("It's rainy!");
-        } else if (description.includes('thunderstorm')) {
+        } else if (description.includes(' thunderstorm')) {
           card.classList.add('stormy');
           // Additional code or actions specific to stormy weather
           console.log("It's stormy!");
-        } else if (description.includes('clear sky') || description.includes('few clouds') || description.includes('scattered clouds')) {
+        } else if (description.includes(' clear sky') || description.includes(' few clouds') || description.includes(' scattered clouds')) {
           card.classList.add('sunny');
           // Additional code or actions specific to sunny weather
           console.log("It's sunny!");
-        } else if (description.includes('snowy')) {
+        } else if (description.includes(' snowy')) {
           card.classList.add('snowy');
           // Additional code or actions specific to snowy weather
           console.log("It's snowy!");
-        } else if (description.includes('windy')) {
+        } else if (description.includes(' windy')) {
           card.classList.add('windy');
           // Additional code or actions specific to windy weather
           console.log("It's windy!");
-        } else if (description.includes('overcast clouds')) {
+        } else if (description.includes(' overcast clouds')) {
           card.classList.add('cloudy');
           console.log("It's cloudy");
         } else {
