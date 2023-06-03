@@ -45,7 +45,7 @@ let weather = {
           card.classList.add('stormy');
           // Additional code or actions specific to stormy weather
           console.log("It's stormy!");
-        } else if (description.includes('clear sky') || description.includes('few clouds') || description.includes('scattered clouds')) {
+        } else if (description.includes('clear sky') || description.includes('few clouds') || description.includes('scattered clouds')|| description.includes('broken clouds')) {
           card.classList.add('sunny');
           // Additional code or actions specific to sunny weather
           console.log("It's sunny!");
